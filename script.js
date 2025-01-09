@@ -90,6 +90,8 @@ document.querySelectorAll('.tab-button').forEach((button) => {
 
   // Edit a registration
   window.editRegistration = function (index) {
+      let editIndex; // Declare globally if it needs to be used elsewhere
+
     const registrations = JSON.parse(localStorage.getItem('registrations')) || [];
     const registration = registrations[index];
 
