@@ -93,6 +93,7 @@ document.querySelectorAll('.tab-button').forEach((button) => {
       let editIndex; // Declare globally if it needs to be used elsewhere
 
     const registrations = JSON.parse(localStorage.getItem('registrations')) || [];
+    console.log(registrations);
     const registration = registrations[index];
 
     document.getElementById('ownerName').value = registration.ownerName;
